@@ -1,0 +1,79 @@
+[
+    {
+        "id": "50c4825a9db7d943",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "613d1f78579f73de",
+        "type": "mqtt in",
+        "z": "50c4825a9db7d943",
+        "name": "",
+        "topic": "fiap/iot/temphumi",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "58c2f9dbadad268f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 160,
+        "wires": [
+            [
+                "52bd628395b45882"
+            ]
+        ]
+    },
+    {
+        "id": "52bd628395b45882",
+        "type": "debug",
+        "z": "50c4825a9db7d943",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "58c2f9dbadad268f",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
